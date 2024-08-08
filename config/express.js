@@ -4,6 +4,7 @@ const express = require('express');
 function setupExpress(app){
 app.engine('hbs', handlebars.engine({ 
     extname: '.hbs',
+    layoutsDir: 'views/layouts',
     
  })); 
 app.set('view engine', 'hbs');

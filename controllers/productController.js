@@ -3,18 +3,18 @@ const router = express.Router();
 
 
 router.get('/', (req, res)=> {
-    res.render('home', { layout: false });
+    res.render('home');
 });
 // router.get('/about', (req, res) => {
 //     res.render('about', { layout: false });
 // });
 
 router.get('/create', (req, res) => {
-    res.render('create', { layout: false });
+    res.render('create');
 });
 
 router.get('/details', (req, res) => {
-    res.render('details', { layout: false });
+    res.render('details');
 });
 
 module.exports = router;

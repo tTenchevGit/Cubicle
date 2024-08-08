@@ -2,9 +2,9 @@
   "name": "cubicle",
   "version": "1.0.0",
   "main": "index.js",
-  "type": "commonjs",
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "SET NODE_ENV=development && nodemon ./index.js",
+    "prod": "SET NODE_ENV=production && node ./index.js"
   },
   "keywords": [],
   "author": "",

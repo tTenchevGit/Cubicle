@@ -1,21 +1,12 @@
 const express = require('express');
-
 const router = express.Router();
+const productController = require('./controllers/productController');
+const aboutController = require('./controllers/aboutController'); // Provide the correct path to the aboutController module
 
-// Define your routes here
-router.get('/', (req, res)=> {
-    res.render('home', { layout: false });
-});
-router.get('/about', (req, res) => {
-    res.render('about', { layout: false });
-});
 
-router.get('/create', (req, res) => {
-    res.render('create', { layout: false });
-});
 
-router.get('/details', (req, res) => {
-    res.render('details', { layout: false });
-});
+router.use('/', productController);
+router.use('/about', aboutController);
+
 
 module.exports = router;

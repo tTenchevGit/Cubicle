@@ -260,3 +260,8 @@ footer {
         opacity: 0;
     }
 }
+
+.product-image {
+    max-width: 300px;
+    height: auto;
+}

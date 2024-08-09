@@ -7,10 +7,10 @@ const router = express.Router();
 // });
 
 router.get('/create', (req, res) => {
-    res.render('create');
+    res.render('create', {title: 'Create'});
 });
 
-router.get('/details', (req, res) => {
+router.get('/details/:id?', (req, res) => {
     res.render('details');
 });
 

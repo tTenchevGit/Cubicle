@@ -8,11 +8,6 @@ const port = config.PORT || 3500;
 
 app.use(routes);
 
-
-
-
-
-
 app.listen(port, () => {
     console.log(`Server is running on port ${port}`);
 });

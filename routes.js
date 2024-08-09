@@ -1,10 +1,12 @@
 const express = require('express');
 const router = express.Router();
 const productController = require('./controllers/productController');
-const aboutController = require('./controllers/aboutController'); // Provide the correct path to the aboutController module
+const aboutController = require('./controllers/aboutController');
+const homeController = require('./controllers/homeController');
 
 
 
+router.use('/', homeController);
 router.use('/', productController);
 router.use('/about', aboutController);
 router.get('*', (req, res) => {

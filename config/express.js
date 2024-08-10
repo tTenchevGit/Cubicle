@@ -16,6 +16,7 @@
 const express = require('express');
 const handlebars = require('express-handlebars');
 const path = require('path');
+const bodyParser = require('body-parser');
 
 module.exports = (app) => {
     app.engine('hbs', handlebars.engine({ 
@@ -26,4 +27,8 @@ module.exports = (app) => {
     app.set('views', path.join(__dirname, '../views'));
 
     app.use(express.static(path.join(__dirname, '../public')));
+
+    app.use(bodyParser.json());
+    app.use(bodyParser.urlencoded({ extended: true }));
+
 };

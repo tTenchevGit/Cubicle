@@ -19,5 +19,19 @@
     "imageUrl": "https://media.ipassio.com/media/blog/benefits-of-solving-rubiks-cube/blog_icon/benefits-of-solving-rubiks-cube.jpg",
     "difficultyLevel": "3",
     "id": "95dc8822-5f2b-43e8-8768-efaca5c320c7"
+  },
+  {
+    "name": "bbb",
+    "description": "",
+    "imageUrl": "",
+    "difficultyLevel": "1",
+    "id": "9f193af7-e8da-4ab0-aed8-3f1820e3837b"
+  },
+  {
+    "name": "",
+    "description": "",
+    "imageUrl": "",
+    "difficultyLevel": "1",
+    "id": "e48cc482-4c81-412a-834a-2f9c8d3b5215"
   }
 ]

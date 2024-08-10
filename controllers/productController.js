@@ -14,7 +14,7 @@ router.post('/create', (req, res) => {
     const details = req.body;
     details.id = uuidv4();
     console.log(details);
-    res.send('It is Created');
+    res.redirect('/');
 
     // Read the existing servers.json file
     fs.readFile('servers.json', 'utf8', (err, data) => {
@@ -23,7 +23,7 @@ router.post('/create', (req, res) => {
             return;
         }
 
-        // Parse the JSON data into an array
+       
         const servers = JSON.parse(data);
 
         // Add the details to the array
